@@ -15,7 +15,7 @@ int main()
 	struct sockaddr_in client_address;
 	int request;
 	int incoming; 
-	int pass = 0x4e49434b; //CHANGE TO ACTUAL PASS
+	int pass = 0x4D4F5353; //ACTUAL PASS = MOSS
 	char key[] = "aSByZWFsbHkgaG9wZSBsaWZlIGdldHMgZWFzaWVyLi4u";
 	char reject[] = "Nope.\n";
 
