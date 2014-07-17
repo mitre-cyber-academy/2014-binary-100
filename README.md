@@ -14,7 +14,7 @@ To compile: We have to disable the overflow protection. During testing I had com
  gcc -Wall -fno-stack-protector -D_FORTIFY_SOURCE=0 buff.c -o buff
  
  listener.c
- gcc -Wall -fno-stack-protector -D_FORTIFY_SOURCE=0 listener.c -o listener
+ gcc -Wall -D_FORTIFY_SOURCE=0 listener.c -o listener
  
  Note: You may want to use -g compiler flag to debug the code.
 
