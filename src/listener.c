@@ -13,8 +13,8 @@ int main()
 	int sock = socket(AF_INET, SOCK_STREAM, 0);
 	struct sockaddr_in server_address;
 	struct sockaddr_in client_address;
-	int request;
-	int incoming; 
+	int request = 0;
+	int incoming = 0; 
 	int pass = 0x4D4F5353; //ACTUAL PASS = MOSS
 	char key[] = "aSByZWFsbHkgaG9wZSBsaWZlIGdldHMgZWFzaWVyLi4u";
 	char reject[] = "Nope.\n";

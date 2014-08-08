@@ -26,13 +26,13 @@ int main()
 
 	connect(sock, (struct sockaddr *) &server_address, sizeof(server_address));
 
-	int keyRequest;
+	int keyRequest = 0;
 	char buffer[80];
 
 	//printf("%d\n", sizeof(buffer)); //DEBUGGING
 	//printf("%d\n", sizeof(keyRequest)); //DEBUGGING
 
-	//printf("Buffer[0]: %08x 	Buffer[79]: %08x	 Buffer: %08x 	keyRequest: %08x\n", &buffer[0], &buffer[79], &buffer, &keyRequest); //DEBUGGING, BUT MAY KEEP
+	//printf("Buffer[0]: %p 	Buffer[79]: %p	 Buffer: %p 	keyRequest: %p\n", &buffer[0], &buffer[79], &buffer, &keyRequest); //DEBUGGING, BUT MAY KEEP
 
 	//printf("keyRequest: %d\n", keyRequest);
 
@@ -45,7 +45,7 @@ int main()
 
 	temp = htonl(keyRequest);
 
-	out = send(sock, &temp, sizeof(uint32_t), 0);
+	out = send(sock, &temp, sizeof(uint64_t), 0);
 	out = recv(sock, reply, 64, 0);
 
 	puts(reply);
