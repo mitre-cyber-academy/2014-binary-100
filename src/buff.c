@@ -29,10 +29,10 @@ int main()
 	int keyRequest = 0;
 	char buffer[80];
 
-	//printf("%d\n", sizeof(buffer)); //DEBUGGING
+	//printf("%d\n", sizeof(buffer));	 //DEBUGGING
 	//printf("%d\n", sizeof(keyRequest)); //DEBUGGING
 
-	//printf("Buffer[0]: %p 	Buffer[79]: %p	 Buffer: %p 	keyRequest: %p\n", &buffer[0], &buffer[79], &buffer, &keyRequest); //DEBUGGING, BUT MAY KEEP
+	printf("Buffer[0]: %p 	Buffer[79]: %p	 Buffer: %p 	keyRequest: %p\n", &buffer[0], &buffer[79], &buffer, &keyRequest); //DEBUGGING, BUT MAY KEEP
 
 	//printf("keyRequest: %d\n", keyRequest);
 

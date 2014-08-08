@@ -44,8 +44,10 @@ int main()
 
 		if(request == pass)
 		{
-			printf("%d\n", request); //DEBUGGING
-			printf("%d\n", pass); //DEBUGGING
+			printf("Request: %d\n", request);  //DEBUGGING
+			printf("Request (Hex): %x\n", request); //DEBUGGING
+			printf("Pass: %d\n", pass);  //DEBUGGING
+			printf("Pass (Hex): %x\n", pass); //DEBUGGING
 			puts("Access granted");
 			temp = send(incoming, strcat(key, " \n"), sizeof(key) + 1, 0);
 		}
