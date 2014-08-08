@@ -1,0 +1,8 @@
+---
+path:		.
+username:           "ubuntu"
+flavor_id:          "t2.small"
+image_id:           "ami-8e7ab6e6"
+private_ip_address: "10.0.0.248"
+tags:
+    Name:	binary/buffer-overflow
