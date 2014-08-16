@@ -6,8 +6,12 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-cookbook_file "listener" do
-  path "/usr/bin/listener"
+package "python-twisted" do
+  action :install
+end
+
+cookbook_file "listener.py" do
+  path "/usr/bin/listener.py"
   action :create
   mode 0755
 end

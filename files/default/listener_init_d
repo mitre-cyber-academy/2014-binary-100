@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DESC="Start openvpn-watchkeys to watch directory in the background and create keys as needed."
-NAME=listener
+DESC="Start buffer-overflow listener on a server at startup."
+NAME=listener.py
 DAEMON=/usr/bin/$NAME
 DAEMON_ARGS=""
 PIDFILE=/var/run/$NAME.pid
